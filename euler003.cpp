@@ -8,8 +8,7 @@ int main(){
   long N, maxprime, i, x;
   std::cout << "pls give integer" << std::endl;
   std::cin >> N;
-  x = N;
-  bool primefound = false;
+  x = N; // placeholder for end message
   for (i=2; i<sqrt(N);i=i+1){
     if (N % i == 0){
       std::cout << N << " is divisible by " << i << std::endl;
