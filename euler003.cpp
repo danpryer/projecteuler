@@ -13,8 +13,8 @@ int checkprime(long x) { //function which checks if input number is prime
     if(x % i == 0) {
       isPrime = false;
       break;
-    }
-  }
+    } //end if
+  } //end for
   return isPrime;
 }
 
