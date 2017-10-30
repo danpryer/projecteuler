@@ -6,7 +6,6 @@
 int checkprime(long x) { //function which checks if input number is prime
   long i;
   bool isPrime = true;
-
   for(i = 2; i <= x / 2; i=i+1) {
     if(x % i == 0) {
       isPrime = false;
@@ -17,10 +16,10 @@ int checkprime(long x) { //function which checks if input number is prime
 }
 
 int main(){
-  long N = 600851475143;
+  long N = 600851475143; // set number to find factor of here
   long j;
   bool primefound = false;
-  if (checkprime(N) == true) {
+  if (checkprime(N) == true) { //check if N is a prime
     primefound = true;
     std::cout << "The original number entered, " << N << ", is a prime!" << std::endl;
   }
