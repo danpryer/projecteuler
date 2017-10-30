@@ -1,3 +1,5 @@
+// simple function to check if an input integer is prime or not
+
 #include <iostream>
 #include <math.h>
 
