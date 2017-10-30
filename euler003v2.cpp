@@ -1,4 +1,4 @@
-// 2nd attempt at euler 3
+// Alternate approach to euler problem 3 (slow)
 
 #include <iostream>
 #include <math.h>
@@ -6,7 +6,7 @@
 int checkprime(long x) { //function which checks if input number is prime
   long i;
   bool isPrime = true;
-  for(i = 2; i <= x / 2; i=i+1) {
+  for(i = 2; i <= sqrt(x); i=i+1) {
     if(x % i == 0) {
       isPrime = false;
       break;
