@@ -6,8 +6,9 @@
 
 int main(){
   long N, maxprime, i, x;
-  std::cout << "pls give integer" << std::endl;
-  std::cin >> N;
+  //std::cout << "pls give integer" << std::endl;
+  //std::cin >> N;
+  N = 600851475143;
   x = N; // placeholder for end message
   for (i=2; i<sqrt(N);i=i+1){
     if (N % i == 0){
