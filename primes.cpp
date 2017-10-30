@@ -1,7 +1,7 @@
 #include <iostream>
 #include <math.h>
 
-int checkprime(long x) {
+int checkprime(long x) { //function which checks if input number is prime
   long i;
   bool isPrime = true;
 
