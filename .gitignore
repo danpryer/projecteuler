@@ -1,4 +1,6 @@
 #C++ gitignore
 
-*.o
 *.DS_Store
+*
+*.*
+!*/
