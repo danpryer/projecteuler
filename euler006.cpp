@@ -28,6 +28,7 @@ int main() { // calculates and prints the diff as answer
   long answer;
   long N = 100;
   answer = squareofsums(N) - sumofsquares(N);
-  std::cout << "Answer is " << answer << std::endl;
+  std::cout << "The difference between the square of sums and sum of ";
+  std::cout << "squares of the first 100 numbers is " << answer << std::endl;
 return 0;
 }
