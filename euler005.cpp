@@ -24,6 +24,7 @@ int main(){
     y = y + 1;
     found = division(y);
   } while (found == false);
-  std::cout << "Answer is " << y << std::endl;
+  std::cout << "The smallest positive number that is evenly ";
+  std::cout << "divisible by the first 20 numbers is " << y << std::endl;
   return 0;
 }
