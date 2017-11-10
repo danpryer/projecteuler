@@ -4,10 +4,7 @@
 #include <iostream>
 #include <math.h>
 #include <fstream>
-#include <vector>
 #include <string>
-
-std::vector<long long> vector;
 
 int main(){
   // load text file
