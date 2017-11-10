@@ -37,15 +37,24 @@ int main(){
           n = (3*n) + 1;
           counter++;
         }
+
+        //section to stop recalculation of chains
+        if (n < N) {
+          if (chainlen[n] != 0) { // if you hit an already calculated number
+            counter = counter + chainlen[n]; // inherit counter from the chain
+            chainlen[N] = counter;
+            n = 1; // now exit the while loop
+          }
+        }
       }
       chainlen[N] = counter;
-    }
-    //std::cout << "N = " << N << "  Counter = " << counter << std::endl; //tracer
 
-    //find largest chain and associated N
-    if (chainlen[N] > maxchain){
-      maxchain = chainlen[N];
-      maxN = N;
+      //find largest chain and associated N
+      if (chainlen[N] > maxchain){
+        maxchain = chainlen[N];
+        maxN = N;
+      }
+    //std::cout << "N = " << N << "  Counter = " << counter << std::endl; //tracer
     }
   }
 
